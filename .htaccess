@@ -1,0 +1,5 @@
+# Habilitar el motor de reescritura
+RewriteEngine On
+
+# Reescribir cualquier URL en formato short/<cadena> para que sea manejada por short.php
+RewriteRule ^short/([a-zA-Z0-9]+)$ short.php?code=$1 [L,QSA]
